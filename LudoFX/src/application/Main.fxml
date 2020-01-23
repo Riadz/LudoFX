@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UI">
+   <children>
+      <AnchorPane fx:id="Game_APane" maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Polygon fx:id="P1_Tri" fill="WHITE" layoutX="277.0" layoutY="373.0" rotate="90.0" scaleX="0.92" scaleY="0.45" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Rectangle fx:id="P3_Rec" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="157.0" layoutX="254.0" layoutY="410.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+            <Polygon fx:id="P4_Tri" fill="WHITE" layoutX="323.0" layoutY="373.0" rotate="-90.0" scaleX="0.92" scaleY="0.45" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Rectangle fx:id="P4_Rec" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="157.0" layoutX="393.0" layoutY="299.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+            <Polygon fx:id="P3_Tri" fill="WHITE" layoutX="300.0" layoutY="397.0" scaleX="0.92" scaleY="0.45" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Rectangle fx:id="P1_Rec" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="148.0" layoutY="271.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+            <Rectangle fx:id="P2_Rec" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="149.0" layoutX="285.0" layoutY="167.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+            <Polygon fx:id="P2_Tri" fill="WHITE" layoutX="300.0" layoutY="350.0" rotate="180.0" scaleX="0.92" scaleY="0.45" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" y="50.0">
+               <image>
+                  <Image url="@../imgs/Main_img.png" />
+               </image>
+            </ImageView>
+            <Line endX="600.0" endY="42.0" startY="42.0" />
+            <Line endX="600.0" endY="650.0" layoutY="26.0" startY="650.0" />
+            <Button fx:id="Dice_Button" layoutX="246.0" layoutY="685.0" mnemonicParsing="false" onAction="#rollDice" onKeyPressed="#rollDice" prefHeight="110.0" prefWidth="112.0" />
+            <Rectangle fx:id="diceButtonRec" arcHeight="5.0" arcWidth="5.0" blendMode="ADD" disable="true" height="105.0" layoutX="246.0" layoutY="685.0" opacity="0.7" stroke="BLACK" strokeType="INSIDE" width="105.0" />
+            <Circle fx:id="P1_Dog1" fill="WHITE" layoutX="90.0" layoutY="150.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P1_Dog2" fill="WHITE" layoutX="170.0" layoutY="150.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P1_Dog4" fill="WHITE" layoutX="170.0" layoutY="242.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P1_Dog3" fill="WHITE" layoutX="90.0" layoutY="242.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P2_Dog3" fill="WHITE" layoutX="430.0" layoutY="242.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P2_Dog4" fill="WHITE" layoutX="510.0" layoutY="242.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P2_Dog2" fill="WHITE" layoutX="510.0" layoutY="150.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P2_Dog1" fill="WHITE" layoutX="430.0" layoutY="150.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P3_Dog1" fill="WHITE" layoutX="90.0" layoutY="482.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P3_Dog2" fill="WHITE" layoutX="170.0" layoutY="482.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P3_Dog4" fill="WHITE" layoutX="170.0" layoutY="574.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P3_Dog3" fill="WHITE" layoutX="90.0" layoutY="574.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P4_Dog3" fill="WHITE" layoutX="430.0" layoutY="574.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P4_Dog4" fill="WHITE" layoutX="510.0" layoutY="574.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P4_Dog2" fill="WHITE" layoutX="510.0" layoutY="482.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Circle fx:id="P4_Dog1" fill="WHITE" layoutX="430.0" layoutY="482.0" radius="13.0" strokeType="INSIDE" styleClass="Dogs" />
+            <Label fx:id="P1_Lb" layoutX="1.0" layoutY="42.0" maxHeight="50.0" maxWidth="249.0" minWidth="130.0" prefHeight="50.0" prefWidth="249.0" styleClass="Name_Labels" />
+            <Label fx:id="P3_Lb" layoutY="625.0" maxHeight="50.0" maxWidth="249.0" minWidth="130.0" prefHeight="50.0" prefWidth="249.0" styleClass="Name_Labels" />
+            <Label fx:id="P2_Lb" layoutX="353.0" layoutY="42.0" maxHeight="50.0" maxWidth="249.0" minWidth="130.0" prefHeight="50.0" prefWidth="249.0" styleClass="Name_Labels" />
+            <Label fx:id="P4_Lb" layoutX="351.0" layoutY="625.0" maxHeight="50.0" maxWidth="249.0" minWidth="130.0" prefHeight="50.0" prefWidth="249.0" styleClass="Name_Labels" />
+            <Button id="Return_Button" cancelButton="true" focusTraversable="false" layoutX="18.0" maxHeight="41.0" maxWidth="41.0" minHeight="41.0" minWidth="41.0" mnemonicParsing="false" onAction="#Backto_Menu" prefHeight="41.0" prefWidth="41.0" />
+            <Button fx:id="D_Button1" layoutX="77.0" layoutY="137.0" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0" mnemonicParsing="false" onAction="#Dog_Button_Clicked" prefHeight="26.0" prefWidth="26.0" styleClass="Dog_Button" text="0" textAlignment="CENTER" visible="false" />
+            <Button fx:id="D_Button2" layoutX="157.0" layoutY="137.0" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0" mnemonicParsing="false" onAction="#Dog_Button_Clicked" prefHeight="26.0" prefWidth="26.0" styleClass="Dog_Button" text="1" textAlignment="CENTER" visible="false" />
+            <Button fx:id="D_Button3" layoutX="77.0" layoutY="229.0" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0" mnemonicParsing="false" onAction="#Dog_Button_Clicked" prefHeight="26.0" prefWidth="26.0" styleClass="Dog_Button" text="2" textAlignment="CENTER" visible="false" />
+            <Button fx:id="D_Button4" layoutX="157.0" layoutY="229.0" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0" mnemonicParsing="false" onAction="#Dog_Button_Clicked" prefHeight="26.0" prefWidth="26.0" styleClass="Dog_Button" text="3" textAlignment="CENTER" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Game_Start_Menu" maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0">
+         <children>
+            <Label id="startGameLabel" fx:id="startGameLabel" layoutX="150.0" layoutY="96.0" prefHeight="26.0" prefWidth="300.0" text="You need at least 2 players to start !" />
+            <Button fx:id="Start_Button" defaultButton="true" layoutX="150.0" layoutY="96.0" mnemonicParsing="false" onAction="#Start_Game" prefHeight="128.0" prefWidth="300.0" text="Start Game" textFill="#656565">
+               <effect>
+                  <DropShadow color="#67837c" height="41.76" offsetX="5.0" offsetY="5.0" radius="19.6375" spread="0.1" width="38.79" />
+               </effect>
+            </Button>
+            <CheckBox fx:id="P1_C" layoutX="127.0" layoutY="403.0" mnemonicParsing="false" onAction="#checkboxChanged" selected="true" styleClass="Check_Bs" text="Palyer 1" />
+            <TextField fx:id="P1_N" layoutX="234.0" layoutY="400.0" prefHeight="30.0" prefWidth="120.0" />
+            <ColorPicker fx:id="P1_Cl" layoutX="367.0" layoutY="400.0" prefHeight="30.0" />
+            <CheckBox fx:id="P2_C" layoutX="127.0" layoutY="458.0" mnemonicParsing="false" onAction="#checkboxChanged" styleClass="Check_Bs" text="Palyer 2" />
+            <TextField fx:id="P2_N" layoutX="234.0" layoutY="455.0" prefHeight="30.0" prefWidth="120.0" />
+            <ColorPicker fx:id="P2_Cl" layoutX="367.0" layoutY="455.0" prefHeight="30.0" />
+            <CheckBox fx:id="P4_C" layoutX="127.0" layoutY="513.0" mnemonicParsing="false" onAction="#checkboxChanged" selected="true" styleClass="Check_Bs" text="Palyer 3" />
+            <TextField fx:id="P4_N" layoutX="234.0" layoutY="510.0" prefHeight="30.0" prefWidth="120.0" />
+            <ColorPicker fx:id="P4_Cl" layoutX="367.0" layoutY="510.0" prefHeight="30.0" />
+            <CheckBox fx:id="P3_C" layoutX="127.0" layoutY="567.0" mnemonicParsing="false" onAction="#checkboxChanged" styleClass="Check_Bs" text="Palyer 4" />
+            <TextField fx:id="P3_N" layoutX="234.0" layoutY="564.0" prefHeight="30.0" prefWidth="120.0" />
+            <ColorPicker fx:id="P3_Cl" layoutX="367.0" layoutY="564.0" prefHeight="30.0" />
+            <Label contentDisplay="RIGHT" graphicTextGap="0.0" layoutX="474.0" layoutY="760.0" prefHeight="26.0" prefWidth="112.0" text="Made By">
+               <graphic>
+                  <Hyperlink contentDisplay="RIGHT" graphicTextGap="2.0" onAction="#openLink" text="Riadz" textFill="#1cbcfc" underline="true" wrapText="true" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

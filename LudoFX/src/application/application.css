@@ -1,0 +1,74 @@
+#Dice_Button {
+	-fx-font-size:1;
+	-fx-background-color:transparent;
+}
+
+#Dice_Button:hover{
+	-fx-background-color :transparent;
+}
+
+#Return_Button{
+	-fx-background-image: url(../imgs/Arrow-Back-icon.png);
+	-fx-background-color :transparent;
+}
+#Return_Button:hover{
+	-fx-background-image: url(../imgs/Arrow-Red-icon.png);
+	-fx-background-color :transparent;
+}
+
+.Name_Labels{
+	-fx-font-family:"Caviar Dreams";
+	-fx-font-size:43;
+	-fx-alignment:CENTER;
+}
+
+#Game_Start_Menu{
+	-fx-font-family:"Caviar Dreams";
+}
+#Game_Start_Menu ColorPicker{
+	-fx-background-radius:0%;
+}
+#startGameLabel{
+	-fx-text-fill:#FF4300FF;
+	-fx-font-size:17;
+	-fx-alignment:CENTER;
+}
+#Start_Button{
+	-fx-text-fill:#F3F3F3FF;
+	-fx-background-radius:0%;
+	-fx-background-color:#71d1d1;
+	-fx-font-size:46;
+	-fx-alignment:CENTER;
+}
+#Start_Button:hover{
+	-fx-background-color:#68c0c0;
+}
+TextField{
+	-fx-background-radius:0%;
+	-fx-font-size:14;
+}
+
+.Dog_Button{
+	-fx-border-width: 3;
+	-fx-border-color: #000000;
+	-fx-border-style: dashed;
+	-fx-border-radius: 50;
+	-fx-background-radius:50;
+	-fx-background-color: transparent;
+	-fx-font-size: 1.0;
+}
+.Check_Bs{
+	-fx-font-size:18;
+	-fx-alignment:CENTER;
+}
+.Dogs{
+	-fx-blend-mode: MULTIPLY;
+	-fx-stroke:#8f8f8f;
+	-fx-stroke-width:2;
+	-fx-opacity:0.7;
+}
+.Win_count_label{
+	-fx-font-family:"DokChampa";
+	-fx-font-size:96;
+	-fx-opacity:0.0;
+}
