@@ -2,7 +2,7 @@
 
 A Ludo Board Game made with javaFX.  
 
-This was my first JavaFX project, made 2 years ago. So excuse me for the ugly code 
+This was my first JavaFX project, made a long time ago. So excuse me for the ugly code 
 
 ![1](https://user-images.githubusercontent.com/46753769/73024012-f3eb7900-3e2c-11ea-895b-9a65cdb10af8.jpg)
 
